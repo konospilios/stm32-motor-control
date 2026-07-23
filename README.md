@@ -6,11 +6,10 @@ Real-time **Field-Oriented Control (FOC)** of a permanent-magnet synchronous mot
 speed with high torque — as a candidate replacement for the geared brushed-DC motor
 in LEGO's *Powered Up* sets.
 
-> **MSc group project** — 8th semester, Electro-Mechanical System Design, Aalborg
-> University (group EMSD2-4.115, Feb–May 2024). Six authors; the work was shared.
-> **My focus was the motor modeling and the controller design.** I also know and
-> have reviewed the firmware. Full report (60 pages + appendices) is in
-> [`docs/report.pdf`](docs/report.pdf).
+Six-person MSc group project — 8th semester, Electro-Mechanical System Design,
+Aalborg University (group EMSD2-4.115, Feb–May 2024). I worked on the motor
+modelling and the controller design. Full report (60 pages + appendices) in
+[`docs/report.pdf`](docs/report.pdf).
 
 ## What it does
 
@@ -58,10 +57,6 @@ alternative to the geared DC motor for this class of application.
 stm32-motor-control/
 ├── docs/report.pdf     Full project report (60 pages + 10 appendices)
 └── firmware/
-    ├── main.c          The control firmware (see firmware/README.md)
-    └── README.md       What's authored vs auto-generated, and a map of the code
+    ├── main.c          The control firmware (FOC + SVPWM loop)
+    └── README.md       A map of the control logic
 ```
-
-> **Note on the code:** `firmware/main.c` is reconstructed from the report's code
-> appendix and is provided for reading, not building — see
-> [`firmware/README.md`](firmware/README.md) for details.
